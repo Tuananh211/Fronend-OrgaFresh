@@ -1,0 +1,89 @@
+.feedback {
+    background: #fcf4ef;
+    padding: 70px 0 90px;
+    .title {
+        font-family: $font-lobster;
+        font-weight: 400;
+        font-size: 4.2rem;
+        line-height: 1.19;
+        text-align: center;
+        color: $header-color;
+    }
+    .list-feedbacks {
+        margin-top: 42px;
+        display: flex;
+        .feedbacks-inner {
+            width: 50%;
+            padding: 0 35px;
+            .command {
+                background: #ffffff;
+                border-radius: 10px;
+                padding: 43px 40px 41px;
+                .sub-title {
+                    font-weight: 500;
+                    font-size: 2rem;
+                    line-height: 1.5;
+                    color: #f96030;
+                    .thank {
+                        margin-left: -35px;
+                    }
+                    svg {
+                        color: #fdc5b5;
+                        font-size: 3.7rem;
+                        z-index: -1;
+                    }
+                }
+                .desc {
+                    width: 95%;
+                    margin-top: 13px;
+                    font-weight: 400;
+                    font-size: 2rem;
+                    line-height: 1.5;
+                    color: #404438;
+                }
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    margin-top: 17px;
+                    .account {
+                        display: flex;
+                        align-items: center;
+                        .avatar {
+                            img {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                object-fit: cover;
+                            }
+                        }
+                        .info {
+                            margin-left: 20px;
+                            .name {
+                                font-family: $font-lobster;
+                                font-weight: 400;
+                                font-size: 2.4rem;
+                                color: #111111;
+                            }
+                            .addr {
+                                margin-top: 13px;
+                                font-weight: 500;
+                                font-size: 1.5rem;
+                                color: #a8ae9e;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .slick-arrow {
+            &::before {
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 0.83;
+                text-align: center;
+                color: $header-color;
+            }
+        }
+    }
+}

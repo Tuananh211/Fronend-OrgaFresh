@@ -1,0 +1,1144 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Lobster+Two:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  width: 1410px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 167px;
+  padding: 0 16px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+  color: #404438;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 999px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+.tym svg {
+  color: #fda72f;
+}
+
+header {
+  padding-top: 8px;
+}
+header .header-top {
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-top .header-top-left {
+  display: flex;
+  align-items: center;
+}
+header .header-top .header-top-left .header-social {
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+  border-right: 1px solid #d8dcd1;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.13;
+  text-align: right;
+  color: #3c5019;
+}
+header .header-top .header-top-left .header-social li {
+  margin-right: 13px;
+}
+header .header-top .header-top-left .header-social li a {
+  color: #3c5019;
+}
+header .header-top .header-top-left .header-mail {
+  padding-left: 30px;
+}
+header .header-top .header-top-left .header-mail a {
+  margin-left: 7px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.46;
+  color: #3c5019;
+}
+header .header-top .header-top-right {
+  display: flex;
+  align-items: center;
+}
+header .header-top .header-top-right select {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.46;
+  color: #3c5019;
+  margin-left: 9px;
+  border: none;
+}
+header .header-top .header-top-right svg {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.13;
+  text-align: right;
+  color: #3c5019;
+}
+header .header-top .header-top-right .sl-language {
+  padding-right: 30px;
+  border-right: 1px solid #d8dcd1;
+}
+header .header-top .header-top-right .sl-currency {
+  padding-left: 30px;
+}
+header .header-bottom {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-bottom .logo h1 {
+  display: none;
+}
+header .header-bottom .navigation {
+  display: flex;
+  align-items: center;
+}
+header .header-bottom .navigation .navbar {
+  display: flex;
+  text-align: center;
+}
+header .header-bottom .navigation .navbar li {
+  margin: 0 22px;
+}
+header .header-bottom .navigation .navbar li a {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.43;
+  text-align: center;
+  color: #3c5019;
+  padding: 0 12px;
+}
+header .header-bottom .navigation .navbar li:hover {
+  background-image: url(../img/Vector\ 1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header .header-bottom .navigation .hotline {
+  margin-left: 87px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.04;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header .header-bottom .navigation .hotline .hotline-icon {
+  color: #88b13e;
+  margin-bottom: 10px;
+}
+header .header-bottom .navigation .hotline .hotline-icon .title {
+  color: #404438;
+}
+header .header-bottom .navigation .hotline a {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.04;
+  color: #404438;
+}
+header .header-bottom .navigation .search {
+  padding: 0 36px;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.41;
+  text-align: center;
+  color: #404438;
+}
+header .header-bottom .navigation .search .search-icon {
+  font-size: 2.4rem;
+  color: #000000;
+}
+header .header-bottom .navigation .item-setting {
+  position: relative;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.41;
+  text-align: center;
+  color: #404438;
+}
+header .header-bottom .navigation .item-setting a {
+  font-size: 2.4rem;
+  color: #000000;
+}
+header .header-bottom .navigation .item-setting::after {
+  position: absolute;
+  top: 4px;
+  right: -5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.66;
+  text-align: center;
+  color: #ffffff;
+  background: #f96030;
+}
+header .header-bottom .navigation .favorite::after {
+  content: attr(favorite-total);
+}
+header .header-bottom .navigation .cart::after {
+  content: attr(cart-total);
+}
+
+.list-slider {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #4d4d4d;
+}
+.list-slider .slider {
+  padding: 105px 0;
+  background-image: url(../img/image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.list-slider .slider .info {
+  width: 34%;
+}
+.list-slider .slider .info .desc {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.73;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.list-slider .slider .info .header a {
+  margin-top: 23px;
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 1.16;
+  color: #ffffff;
+}
+.list-slider .slider .info .btn {
+  margin-top: 38px;
+}
+.list-slider .slider2 {
+  background-image: url(../img/image-4.jpg);
+}
+.list-slider .slider3 {
+  background-image: url(../img/image-5.jpg);
+  background-position: 100% 65%;
+}
+.list-slider .slick-arrow::before {
+  color: #4d4d4d;
+}
+.list-slider .slick-dots li.slick-active button::before {
+  color: #3c5019;
+}
+
+.banners {
+  margin-top: 71px;
+}
+.banners .list-banners {
+  display: flex;
+  gap: 30px;
+}
+.banners .list-banners .banner {
+  width: 33.3%;
+  flex: 1;
+  background-color: #01a0da;
+  padding: 70px 0 70px 30px;
+}
+.banners .list-banners .banner .title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.banners .list-banners .banner .product a {
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-size: 4.2rem;
+  line-height: 1.19;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+.banners .list-banners .banner .action {
+  font-weight: 500;
+  position: relative;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+.banners .list-banners .banner .action::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 90px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 12px;
+  left: 0;
+  bottom: -3px;
+}
+.banners .list-banners .banner:nth-child(2) {
+  background-color: #f3c000;
+}
+.banners .list-banners .banner:nth-child(3) {
+  background-color: #f2467b;
+}
+
+.arrival-products {
+  margin: 74px 0 104px;
+}
+.arrival-products .top-heading .title {
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-size: 4.2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+.arrival-products .top-heading .filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 21px;
+}
+.arrival-products .top-heading .filters a {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #3c5019;
+  border: 1px solid #dddddd;
+  padding: 8px 8px;
+}
+.arrival-products .top-heading .filters a:hover {
+  border-color: #f96030;
+}
+.arrival-products .products {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+.arrival-products .products .product {
+  flex: 0 0 20%;
+  padding: 0 15px;
+}
+.arrival-products .products .product .product-inner {
+  position: relative;
+}
+.arrival-products .products .product .product-inner .thumb {
+  position: relative;
+  width: 100%;
+}
+.arrival-products .products .product .product-inner .thumb img {
+  width: 100%;
+  height: 258px;
+  object-fit: cover;
+}
+.arrival-products .products .product .product-inner .thumb .heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #3c5019;
+  background: #ffffff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+  visibility: hidden;
+  transition: all ease 0.5s;
+}
+.arrival-products .products .product .product-inner .thumb .heart:hover svg {
+  color: #fda72f;
+}
+.arrival-products .products .product .product-inner .thumb .action {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  visibility: hidden;
+  transition: all ease 0.5s;
+}
+.arrival-products .products .product .product-inner .thumb .action a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+}
+.arrival-products .products .product .product-inner .thumb .action .reload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #3c5019;
+  background: #ffffff;
+}
+.arrival-products .products .product .product-inner .thumb .action .add-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 118px;
+  height: 35px;
+  background: #f96030;
+}
+.arrival-products .products .product .product-inner .thumb .action .add-cart a {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.9;
+  text-align: center;
+  color: #ffffff;
+}
+.arrival-products .products .product .product-inner .thumb .action .find {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #3c5019;
+  background: #ffffff;
+}
+.arrival-products .products .product .product-inner .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px 30px 29px 30px;
+}
+.arrival-products .products .product .product-inner .body .title a {
+  display: inline-flex;
+  margin: 12px 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #3c5019;
+}
+.arrival-products .products .product .product-inner .body .price {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #3c5019;
+}
+.arrival-products .products .product .product-inner .body .price .cost {
+  margin-right: 12px;
+  font-size: 1.8rem;
+}
+.arrival-products .products .product .product-inner .body .price .discount {
+  color: #a8ae9e;
+  text-decoration: line-through;
+}
+.arrival-products .products .product .product-inner:hover {
+  box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+}
+.arrival-products .products .product .product-inner:hover .action,
+.arrival-products .products .product .product-inner:hover .heart {
+  visibility: visible;
+}
+.arrival-products .products .product .product-inner::before {
+  content: attr(content);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 57px;
+  height: 20px;
+  padding-top: 5px;
+  background: #3d93e2;
+  border-radius: 0 0 10px 0;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 1;
+}
+.arrival-products .products .slick-arrow::before {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 0.83;
+  text-align: center;
+  color: #a8ae9e;
+}
+
+.deal {
+  padding: 60px 0 80px;
+  background: #bdbdbd;
+  background-image: url(../img/image-1.jpg);
+  width: 100%;
+  height: 617px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.deal .deal-info {
+  width: 47%;
+  margin-left: auto;
+  bottom: 80px;
+  padding: 70px 68px;
+  border-radius: 10px;
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.46;
+}
+.deal .deal-info .sub-title {
+  text-transform: uppercase;
+  color: #f96030;
+}
+.deal .deal-info .title a {
+  margin-top: 10px;
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-size: 4.2rem;
+  line-height: 1.19;
+  color: #000000;
+}
+.deal .deal-info .desc {
+  margin-top: 22px;
+  font-weight: 400;
+  color: #404438;
+}
+.deal .deal-info .times {
+  display: flex;
+  gap: 34px;
+  margin-top: 45px;
+}
+.deal .deal-info .times .time-deal {
+  display: flex;
+  align-items: center;
+}
+.deal .deal-info .times .time-deal .time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px dashed #66a612;
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 0.69;
+  text-align: center;
+  color: #3c5019;
+}
+.deal .deal-info .times .time-deal span {
+  margin-left: -6px;
+  font-weight: 400;
+}
+.deal .deal-info .btn {
+  margin-top: 50px;
+  border: 2px solid #f96030;
+  color: #3c5019;
+}
+
+.feature {
+  margin: 92px 0 86px;
+}
+.feature .top-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feature .top-heading .title {
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-size: 4.2rem;
+  line-height: 1.19;
+  color: #3c5019;
+}
+.feature .top-heading .action {
+  position: relative;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.44;
+}
+.feature .top-heading .action .action-link {
+  color: #404438;
+}
+.feature .top-heading .action::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #88b13e;
+}
+.feature .feature-products {
+  margin-top: 31px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.feature .feature-products .product {
+  position: relative;
+  width: 20%;
+}
+.feature .feature-products .product .thumb {
+  width: 100%;
+  height: 258px;
+}
+.feature .feature-products .product .thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.feature .feature-products .product .body {
+  text-align: center;
+  padding: 15px 30px 29px 30px;
+}
+.feature .feature-products .product .body .title a {
+  display: inline-flex;
+  margin: 12px 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.08;
+  text-align: center;
+  color: #404438;
+}
+.feature .feature-products .product .body .price {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #3c5019;
+}
+.feature .feature-products .product .body .price .cost {
+  margin-right: 12px;
+  font-size: 1.8rem;
+}
+.feature .feature-products .product .body .price .discount {
+  font-weight: 400;
+  color: #a8ae9e;
+  text-decoration: line-through;
+}
+.feature .feature-products .product .save-up {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #bdbdbd;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Lobster Two", cursive;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 98.5px 10px;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  transition: all ease 0.5s;
+}
+.feature .feature-products .product .save-up .save {
+  margin: auto;
+  width: 119px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feature .feature-products .product .save-up .save .percent a {
+  color: #ffffff;
+  display: inline-flex;
+  margin-top: 17px;
+  font-size: 3.6rem;
+}
+.feature .feature-products .product .save-up .save .link {
+  margin-top: 27px;
+  position: relative;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.feature .feature-products .product .save-up .save .link::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 89px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.feature .feature-products .product:hover .save-up {
+  visibility: visible;
+}
+
+.categories {
+  padding: 60px 0;
+  background: #333333;
+}
+.categories .list-categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 100px;
+}
+.categories .list-categories .categorie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #e0e0e0;
+}
+.categories .list-categories .categorie .btn {
+  min-width: 146px;
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.16;
+}
+
+.feedback {
+  background: #fcf4ef;
+  padding: 70px 0 90px;
+}
+.feedback .title {
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-size: 4.2rem;
+  line-height: 1.19;
+  text-align: center;
+  color: #3c5019;
+}
+.feedback .list-feedbacks {
+  margin-top: 42px;
+  display: flex;
+}
+.feedback .list-feedbacks .feedbacks-inner {
+  width: 50%;
+  padding: 0 35px;
+}
+.feedback .list-feedbacks .feedbacks-inner .command {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 43px 40px 41px;
+}
+.feedback .list-feedbacks .feedbacks-inner .command .sub-title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #f96030;
+}
+.feedback .list-feedbacks .feedbacks-inner .command .sub-title .thank {
+  margin-left: -35px;
+}
+.feedback .list-feedbacks .feedbacks-inner .command .sub-title svg {
+  color: #fdc5b5;
+  font-size: 3.7rem;
+  z-index: -1;
+}
+.feedback .list-feedbacks .feedbacks-inner .command .desc {
+  width: 95%;
+  margin-top: 13px;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #404438;
+}
+.feedback .list-feedbacks .feedbacks-inner .command .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 17px;
+}
+.feedback .list-feedbacks .feedbacks-inner .command .row .account {
+  display: flex;
+  align-items: center;
+}
+.feedback .list-feedbacks .feedbacks-inner .command .row .account .avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feedback .list-feedbacks .feedbacks-inner .command .row .account .info {
+  margin-left: 20px;
+}
+.feedback .list-feedbacks .feedbacks-inner .command .row .account .info .name {
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #111111;
+}
+.feedback .list-feedbacks .feedbacks-inner .command .row .account .info .addr {
+  margin-top: 13px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #a8ae9e;
+}
+.feedback .list-feedbacks .slick-arrow::before {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 0.83;
+  text-align: center;
+  color: #3c5019;
+}
+
+.top-seller {
+  padding: 90px 0;
+}
+.top-seller .topsell {
+  display: flex;
+  gap: 28px;
+}
+.top-seller .topsell .topsell-left {
+  width: 66%;
+}
+.top-seller .topsell .topsell-left .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-seller .topsell .topsell-left .row .title {
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-size: 4.2rem;
+  line-height: 1, 19;
+  color: #3c5019;
+}
+.top-seller .topsell .topsell-left .row .action {
+  position: relative;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+.top-seller .topsell .topsell-left .row .action .action-link {
+  color: #404438;
+}
+.top-seller .topsell .topsell-left .row .action svg {
+  color: #404438;
+}
+.top-seller .topsell .topsell-left .row .action::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #88b13e;
+}
+.top-seller .topsell .topsell-left .top-products {
+  width: 100%;
+  margin-top: 31px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.top-seller .topsell .topsell-left .top-products .product {
+  display: flex;
+  width: 48.2%;
+  background: #ffffff;
+  border: 1px solid #ececec;
+}
+.top-seller .topsell .topsell-left .top-products .product .thumb {
+  width: 35.1%;
+  height: 158px;
+}
+.top-seller .topsell .topsell-left .top-products .product .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.top-seller .topsell .topsell-left .top-products .product .body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 64%;
+  padding: 44px 20px;
+}
+.top-seller .topsell .topsell-left .top-products .product .body .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.top-seller .topsell .topsell-left .top-products .product .body .info .name a {
+  display: inline-flex;
+  margin: 12px 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #3c5019;
+}
+.top-seller .topsell .topsell-left .top-products .product .body .info .price {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #404438;
+}
+.top-seller .topsell .topsell-left .top-products .product .body .shopping-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #a8ae9e;
+}
+.top-seller .topsell .topsell-left .top-products .product .body .shopping-icon a {
+  padding: 10px;
+  color: #ffffff;
+}
+.top-seller .topsell .topsell-left .top-products .product:hover {
+  box-shadow: 0px 5px 25px rgba(138, 159, 168, 0.2);
+}
+.top-seller .topsell .topsell-left .top-products .product:hover .shopping-icon {
+  background: #f96030;
+}
+.top-seller .topsell .topsell-right {
+  width: 34%;
+  padding: 210px 77px;
+  background: #b3b3b3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-seller .topsell .topsell-right .slogan {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.46;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.top-seller .topsell .topsell-right .desc a {
+  display: inline-block;
+  font-family: "Lobster Two", cursive;
+  margin: 20px 0 81px;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 0.83;
+  color: #ffffff;
+}
+.top-seller .topsell .topsell-right .action {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.43;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.top-seller .topsell .topsell-right .action::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 89px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+footer {
+  background: #fcf4ef;
+}
+footer .footer-top {
+  padding: 35px 0 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e9e4da;
+}
+footer .footer-top .contact {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer-top .contact .support {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-top .contact .support svg {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #3c5019;
+}
+footer .footer-top .contact .info .title {
+  font-family: "Lobster Two", cursive;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.17;
+  color: #3c5019;
+}
+footer .footer-top .contact .info .link {
+  display: block;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.75;
+  color: #404438;
+}
+footer .footer-top .phone-contact {
+  width: 30%;
+  margin-left: 5px;
+}
+footer .footer-top .subscribe {
+  width: 37%;
+  display: flex;
+  align-items: center;
+}
+footer .footer-top .subscribe input {
+  width: 71%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 66px 0 0 66px;
+  padding: 18px 228px 15.5px 12px;
+  border-color: currentColor;
+  border: none;
+}
+footer .footer-top .subscribe .submit {
+  width: 29%;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.79;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #99412b;
+  border: none;
+  border-radius: 0 66px 66px 0;
+  padding: 11px 30px;
+}
+footer .footer-top .subscribe .submit:hover {
+  opacity: 0.9;
+}
+footer .body {
+  padding: 68px 0;
+  display: flex;
+  align-items: center;
+}
+footer .body .body-left {
+  width: 33.7%;
+}
+footer .body .body-left .open-time {
+  width: 55.5%;
+  word-break: break-all;
+  margin-top: 23px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.67;
+  color: #404438;
+}
+footer .body .body-left .social {
+  margin-top: 24px;
+}
+footer .body .body-left .social a {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #404438;
+}
+footer .body .body-left .social a ~ a {
+  margin-left: 27px;
+}
+footer .body .row {
+  width: 66.3%;
+  display: flex;
+}
+footer .body .row .column {
+  width: 30%;
+}
+footer .body .row .column .heading {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.44;
+  color: #3c5019;
+}
+footer .body .row .column .list {
+  margin-top: 25px;
+}
+footer .body .row .column .list .item a {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.13;
+  color: #797a6f;
+}
+footer .body .row .column .list .item a:hover {
+  text-decoration: underline;
+}
+footer .body .row .column .address {
+  width: 72%;
+}
+footer .body .row .column .address,
+footer .body .row .column .mail-contact {
+  margin: 24px 0 29px;
+  word-break: break-all;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.67;
+  color: #404438;
+}
+
+.bottom {
+  background: #99412b;
+  padding: 15px 0;
+}
+.bottom .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom .row .copy-right {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.67;
+  color: #ffffff;
+}
+.bottom .row .social a {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1, 39;
+  text-align: right;
+  color: #ffffff;
+}
+.bottom .row .social a ~ a {
+  margin-left: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

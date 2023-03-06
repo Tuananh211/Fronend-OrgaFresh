@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: $font-jost;
+}
+.container {
+    width: 1410px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    min-width: 167px;
+    padding: 0 16px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fff;
+    color: #404438;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 999px;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+.tym {
+    svg {
+        color: #fda72f;
+    }
+}

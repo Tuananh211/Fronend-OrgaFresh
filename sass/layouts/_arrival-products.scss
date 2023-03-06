@@ -1,0 +1,192 @@
+.arrival-products {
+    margin: 74px 0 104px;
+    .top-heading {
+        .title {
+            font-family: $font-lobster;
+            font-weight: 400;
+            font-size: 4.2rem;
+            line-height: 1.2;
+            text-align: center;
+        }
+        .filters {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 21px;
+
+            a {
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 1.4;
+                color: $header-color;
+                border: 1px solid #dddddd;
+                padding: 8px 8px;
+                &:hover {
+                    border-color: #f96030;
+                }
+            }
+        }
+    }
+    .products {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 30px;
+        .product {
+            flex: 0 0 20%;
+            padding: 0 15px;
+            .product-inner {
+                position: relative;
+                .thumb {
+                    position: relative;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        height: 258px;
+                        object-fit: cover;
+                    }
+                    .heart {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 35px;
+                        height: 35px;
+                        border: 1px solid #3c5019;
+                        background: #ffffff;
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        color: #000000;
+                        visibility: hidden;
+                        transition: all ease 0.5s;
+                        &:hover {
+                            svg {
+                                color: #fda72f;
+                            }
+                        }
+                    }
+                    .action {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        position: absolute;
+                        right: 30px;
+                        bottom: 0;
+                        visibility: hidden;
+                        transition: all ease 0.5s;
+                        a {
+                            font-size: 1.5rem;
+                            font-weight: 400;
+                            color: #000000;
+                        }
+                        .reload {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 35px;
+                            height: 35px;
+                            border: 1px solid #3c5019;
+                            background: #ffffff;
+                        }
+                        .add-cart {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+                            a {
+                                font-weight: 500;
+                                font-size: 1.3rem;
+                                line-height: 1.9;
+                                text-align: center;
+                                color: #ffffff;
+                            }
+                            width: 118px;
+                            height: 35px;
+                            background: #f96030;
+                        }
+                        .find {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 35px;
+                            height: 35px;
+                            border: 1px solid $header-color;
+                            background: #ffffff;
+                        }
+                    }
+                }
+
+                .body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding: 15px 30px 29px 30px;
+                    .title {
+                        a {
+                            display: inline-flex;
+                            margin: 12px 0;
+                            font-weight: 500;
+                            font-size: 1.5rem;
+                            line-height: 1.4;
+                            color: $header-color;
+                        }
+                    }
+                    .price {
+                        font-weight: 500;
+                        font-size: 1.8rem;
+                        line-height: 1.4;
+                        color: $header-color;
+                        .cost {
+                            margin-right: 12px;
+                            font-size: 1.8rem;
+                        }
+                        .discount {
+                            color: #a8ae9e;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+                &:hover {
+                    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+                    border-radius: 25px;
+                    .action,
+                    .heart {
+                        visibility: visible;
+                    }
+                }
+                &::before {
+                    content: attr(content);
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 57px;
+                    height: 20px;
+                    padding-top: 5px;
+                    background: #3d93e2;
+                    border-radius: 0 0 10px 0;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    z-index: 1;
+                }
+            }
+        }
+        .slick-arrow {
+            &::before {
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 0.83;
+                text-align: center;
+                color: #a8ae9e;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+// Slider
+.list-slider {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #4d4d4d;
+    .slider {
+        padding: 105px 0;
+        background-image: url(../img/image-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .info {
+            width: 34%;
+            .desc {
+                font-weight: 600;
+                font-size: 1.5rem;
+                line-height: 1.73;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+            .header {
+                a {
+                    margin-top: 23px;
+                    font-family: $font-lobster;
+                    font-weight: 400;
+                    font-size: 6rem;
+                    line-height: 1.16;
+                    color: #ffffff;
+                }
+            }
+            .btn {
+                margin-top: 38px;
+            }
+        }
+    }
+    .slider2 {
+        background-image: url(../img/image-4.jpg);
+    }
+    .slider3 {
+        background-image: url(../img/image-5.jpg);
+        background-position: 100% 65%;
+    }
+    .slick-arrow {
+        &::before {
+            color: #4d4d4d;
+        }
+    }
+    .slick-dots {
+        li.slick-active {
+            button {
+                &::before {
+                    color: $header-color;
+                }
+            }
+        }
+    }
+}

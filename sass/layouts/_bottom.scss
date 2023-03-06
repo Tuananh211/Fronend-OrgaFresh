@@ -1,0 +1,27 @@
+.bottom {
+    background: #99412b;
+    padding: 15px 0;
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .copy-right {
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.67;
+            color: #ffffff;
+        }
+        .social {
+            a {
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 1, 39;
+                text-align: right;
+                color: #ffffff;
+                ~ a {
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+}

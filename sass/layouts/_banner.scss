@@ -1,0 +1,55 @@
+.banners {
+    margin-top: 71px;
+    .list-banners {
+        display: flex;
+        gap: 30px;
+        .banner {
+            width: 33.3%;
+            flex: 1;
+            background-color: #01a0da;
+            padding: 70px 0 70px 30px;
+            .title {
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 1.4;
+                color: #ffffff;
+                margin-bottom: 5px;
+            }
+            .product {
+                a {
+                    font-family: $font-lobster;
+                    font-weight: 400;
+                    font-size: 4.2rem;
+                    line-height: 1.19;
+                    color: #ffffff;
+                    margin-bottom: 7px;
+                }
+            }
+            .action {
+                font-weight: 500;
+                position: relative;
+                font-size: 1.4rem;
+                line-height: 1.4;
+                color: #ffffff;
+                margin-bottom: 3px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 90px;
+                    height: 2px;
+                    background: #ffffff;
+                    border-radius: 12px;
+                    left: 0;
+                    bottom: -3px;
+                }
+            }
+            &:nth-child(2) {
+                background-color: #f3c000;
+            }
+            &:nth-child(3) {
+                background-color: #f2467b;
+            }
+        }
+    }
+}

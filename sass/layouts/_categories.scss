@@ -1,0 +1,26 @@
+.categories {
+    padding: 60px 0;
+    background: #333333;
+    .list-categories {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 100px;
+        .categorie {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            .btn {
+                min-width: 146px;
+                font-family: $font-lobster;
+                font-weight: 400;
+                font-size: 2.4rem;
+                line-height: 1.16;
+            }
+        }
+    }
+}

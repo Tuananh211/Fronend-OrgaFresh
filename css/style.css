@@ -95,6 +95,7 @@ header .header-top .header-top-right select {
   color: #3c5019;
   margin-left: 9px;
   border: none;
+  cursor: pointer;
 }
 header .header-top .header-top-right svg {
   font-weight: 400;

@@ -31,6 +31,7 @@ footer {
                     font-weight: 400;
                     font-size: 2.4rem;
                     line-height: 1.17;
+                    letter-spacing: 0.5px;
                     color: $header-color;
                 }
                 .link {
@@ -58,6 +59,7 @@ footer {
                 padding: 18px 228px 15.5px 12px;
                 border-color: currentColor;
                 border: none;
+                outline: none;
             }
             .submit {
                 width: 29%;

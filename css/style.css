@@ -668,7 +668,12 @@ header .header-bottom .navigation .cart::after {
   position: absolute;
   top: 0;
   visibility: hidden;
-  transition: all ease 0.5s;
+  background: url("https://images.unsplash.com/photo-1528498033373-3c6c08e93d79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.2 ease-in-out;
+  cursor: pointer;
 }
 .feature .feature-products .product .save-up .save {
   margin: auto;
@@ -758,6 +763,7 @@ header .header-bottom .navigation .cart::after {
   background: #ffffff;
   border-radius: 10px;
   padding: 43px 40px 41px;
+  cursor: pointer;
 }
 .feedback .list-feedbacks .feedbacks-inner .command .sub-title {
   font-weight: 500;
@@ -876,6 +882,7 @@ header .header-bottom .navigation .cart::after {
   width: 48.2%;
   background: #ffffff;
   border: 1px solid #ececec;
+  cursor: pointer;
 }
 .top-seller .topsell .topsell-left .top-products .product .thumb {
   width: 35.1%;
@@ -935,9 +942,13 @@ header .header-bottom .navigation .cart::after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: url(../img/anh1.jpg);
+  background-position: right center;
+  background-size: cover;
+  background-repeat: none;
 }
 .top-seller .topsell .topsell-right .slogan {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.46;
   letter-spacing: 0.1em;
@@ -948,14 +959,14 @@ header .header-bottom .navigation .cart::after {
   display: inline-block;
   font-family: "Lobster Two", cursive;
   margin: 20px 0 81px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 6rem;
   line-height: 0.83;
   color: #ffffff;
 }
 .top-seller .topsell .topsell-right .action {
   position: relative;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.4rem;
   line-height: 1.43;
   letter-spacing: 0.1em;
@@ -1007,6 +1018,7 @@ footer .footer-top .contact .info .title {
   font-weight: 400;
   font-size: 2.4rem;
   line-height: 1.17;
+  letter-spacing: 0.5px;
   color: #3c5019;
 }
 footer .footer-top .contact .info .link {
@@ -1033,6 +1045,7 @@ footer .footer-top .subscribe input {
   padding: 18px 228px 15.5px 12px;
   border-color: currentColor;
   border: none;
+  outline: none;
 }
 footer .footer-top .subscribe .submit {
   width: 29%;
